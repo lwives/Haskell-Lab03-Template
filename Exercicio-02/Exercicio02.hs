@@ -1,10 +1,10 @@
-module Exercicio02 (ocorrencias) where
+module Exercicio02 (sequenciaCubos) where
 
--- Implemente a função 'ocorrencias', que recebe uma lista de números e um número. 
--- Usando recursão, a função devolve o número de ocorrências (i.e., quantidade) do número na lista. 
--- Não use funções de alta-ordem
+-- Utilizando uma lista infinita (stream), elabore uma função que retorne uma lista dos
+-- n primeiros números da sequência definida por: o primeiro elemento é 2, e os
+-- próximos são o cubo do anterior.
 
--- Exemplo: ocorrencias [1, 2, 3, 2] 2 deve retornar 2
+-- Exemplo: sequenciaCubos 3 deve retornar [2, 8, 512]
 
-ocorrencias :: [Int] -> Int -> Int
-ocorrencias lst n = undefined -- Implemente aqui
+sequenciaCubos :: Int -> [Int]
+sequenciaCubos n = undefined -- Implemente aqui

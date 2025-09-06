@@ -1,18 +1,15 @@
 module Main where
 
 import Test.HUnit
-import Exercicio01 (pertenceLst)
+import Exercicio02 (potenciasDe2)
 
-testPertenceLst :: Test
-testPertenceLst = TestList [
-    "teste 1: numero no meio da lista" ~: pertenceLst [1, 2, 3, 4] 3 ~?= True,
-    "teste 2: numero nao na lista" ~: pertenceLst [1, 2, 3, 4] 5 ~?= False,
-    "teste 3: lista vazia" ~: pertenceLst [] 10 ~?= False,
-    "teste 4: numero eh o primeiro elemento" ~: pertenceLst [1, 2, 3, 4] 1 ~?= True,
-    "teste 5: numero eh o ultimo elemento" ~: pertenceLst [1, 2, 3, 4] 4 ~?= True,
-    "teste 6: lista com numeros negativos" ~: pertenceLst [-5, 0, 5] (-5) ~?= True,
-    "teste 7: numero nao pertence a lista vazia" ~: pertenceLst [] 0 ~?= False
+testPotenciasDe2 :: Test
+testPotenciasDe2 = TestList [
+    "teste 1: 5 primeiros elementos" ~: potenciasDe2 5 ~?= [2, 4, 8, 16, 32],
+    "teste 2: 1 elemento" ~: potenciasDe2 1 ~?= [2],
+    "teste 3: 0 elementos" ~: potenciasDe2 0 ~?= [],
+    "teste 4: 10 primeiros elementos" ~: potenciasDe2 10 ~?= [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]
     ]
 
 main :: IO ()
-main = runTestTT testPertenceLst >>= print
+main = runTestTT testPotenciasDe2 >>= print

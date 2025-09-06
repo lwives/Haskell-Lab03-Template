@@ -1,17 +1,15 @@
 module Main where
 
 import Test.HUnit
-import Exercicio03 (replica)
+import Exercicio03 (fibonacci)
 
-testReplica :: Test
-testReplica = TestList [
-    "teste 1: replica 2 3" ~: replica 2 3 ~?= [2, 2, 2],
-    "teste 2: replica 5 1" ~: replica 5 1 ~?= [5],
-    "teste 3: replicacao zero" ~: replica 10 0 ~?= [],
-    "teste 4: replicando numero negativo" ~: replica (-1) 2 ~?= [-1, -1],
-    "teste 5: replicacao com quantidade negativa" ~: replica 7 (-3) ~?= [],
-    "teste 6: replicando o numero 0" ~: replica 0 5 ~?= [0, 0, 0, 0, 0]
+testFibonacci :: Test
+testFibonacci = TestList [
+    "teste 1: 5 primeiros elementos" ~: take 5 fibonacci ~?= [0, 1, 1, 2, 3],
+    "teste 2: 1 elemento" ~: take 1 fibonacci ~?= [0],
+    "teste 3: 0 elementos" ~: take 0 fibonacci ~?= [],
+    "teste 4: 10 primeiros elementos" ~: take 10 fibonacci ~?= [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
     ]
 
 main :: IO ()
-main = runTestTT testReplica >>= print
+main = runTestTT testFibonacci >>= print

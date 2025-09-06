@@ -1,12 +1,13 @@
-module Exercicio03 (replica) where
+module Exercicio03 (fibonacci) where
 
--- Defina a função 'replica', que recebe dois números, 'e' e 'n'. 
--- O primeiro ('e') representa um elemento a ser repetido. 
--- O segundo representa a quantidade ('n') de repetições. 
--- A função deve devolver uma lista com 'n' replicas de 'e'. 
--- Detalhe: para funcionar, a lista deve usar guards ou case.
+-- Utilizando Streams (listas infinitas), elabore uma função que gere a sequência de Fibonacci.
+-- Exemplo: fibonacci deve começar com [0, 1, 1, 2, 3, 5, ...]
+-- Dica: você pode definir a lista de Fibonacci em termos dela mesma.
+-- Se não lembrar da sequência, veja o artigo sobre ela na Wikipedia.
 
--- Exemplo: replica 2 10 -> [2,2,2,2,2,2,2,2,2,2]
+-- Depois, no arquivo 'Main.hs' complete o programa: 
+-- O programa deve solicitar ao usuário que informe quantos elementos da série ele quer gerar. 
+-- Então, usa a função para gerar os números da série e mostrá-los na tela.
 
-replica :: Int -> Int -> [Int]
-replica e n = undefined -- Implemente aqui
+fibonacci :: [Integer]
+fibonacci = undefined -- Implemente aqui

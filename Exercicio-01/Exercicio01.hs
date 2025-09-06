@@ -1,10 +1,9 @@
-module Exercicio01 (pertenceLst) where
+module Exercicio01 (potenciasDe2) where
 
--- Implemente a função 'pertenceLst' que recebe uma lista de números e um número.
--- Usando recursão, a função devolve 'true' se o número encontra-se na lista ou 'false' se ele não se encontra nela.
--- Não use funções de alta-ordem
+-- Utilizando uma lista infinita (stream), elabore uma função que retorne uma lista
+-- dos n primeiros números que são potências de 2 (i.e., 2, 4, 8, 16...).
 
--- Exemplo: pertenceLst [1, 2, 3] 2 deve retornar True
+-- Exemplo: potenciasDe2 5 deve retornar [2, 4, 8, 16, 32]
 
-pertenceLst :: [Int] -> Int -> Bool
-pertenceLst lst n = undefined -- Implemente aqui
+potenciasDe2 :: Int -> [Int]
+potenciasDe2 n = undefined -- Implemente aqui

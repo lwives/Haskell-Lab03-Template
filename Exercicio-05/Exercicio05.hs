@@ -1,11 +1,11 @@
-module Exercicio05 (norma) where
+module Exercicio16 (maiorElemento) where
 
--- Usando funções de ordem superior ('map', 'fold'...) e lambda (i.e., não nomeadas), 
--- elabore uma função que receba uma lista de números reais (representando um vetor Euclidiano) 
--- e calcule a norma desse vetor. Lembre-se de que a norma é a raiz quadrada da soma dos quadrados dos elementos.
--- Considere que os valores do vetor estão normalizados entre 0.0 e 1.0)
+-- Elabore a função 'maiorElemento', que recebe uma lista e retorna o maior
+-- elemento dela. A função deve ser genérica para qualquer tipo que possa ser
+-- ordenado (classe de tipos 'Ord').
+-- Considere que a lista de entrada nunca será vazia.
 
--- Exemplo: norma [0.1, 0.2, 0.3, 0.4] --> 0.547722557505
+-- Exemplo: maiorElemento [1, 5, 2] deve retornar 5
 
-norma :: [Double] -> Double
-norma lst = undefined -- Implemente aqui
+maiorElemento :: (Ord a) => [a] -> a
+maiorElemento lst = undefined -- Implemente aqui

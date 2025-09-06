@@ -1,17 +1,29 @@
 module Main where
 
 import Test.HUnit
-import Exercicio04 (positivos)
+import Exercicio04 (pertence, Aluno(..))
 
-testPositivos :: Test
-testPositivos = TestList [
-    "teste 1: lista com positivos e negativos" ~: positivos [1, 2, -3, 4] ~?= [True, True, False, True],
-    "teste 2: lista com zero" ~: positivos [10, 0, -5] ~?= [True, False, False],
-    "teste 3: lista com apenas positivos" ~: positivos [1, 2, 3] ~?= [True, True, True],
-    "teste 4: lista com apenas negativos e zero" ~: positivos [-1, -2, 0] ~?= [False, False, False],
-    "teste 5: lista vazia" ~: positivos [] ~?= [],
-    "teste 6: lista com um unico elemento" ~: positivos [50] ~?= [True]
+testImplementacaoAluno :: Test
+testImplementacaoAluno = TestList [
+    -- Testes para a implementacao de (==) na classe Eq
+    "teste 1: alunos com mesma matricula" ~: Aluno 1 "Joao" == Aluno 1 "Maria" ~?= True,
+    "teste 2: alunos com matriculas diferentes" ~: Aluno 1 "Joao" == Aluno 2 "Joao" ~?= False,
+
+    -- Testes que usam a funcao 'pertence' com o novo tipo Aluno
+    "teste 3: aluno presente na lista" ~:
+        let
+            listaAlunos = [Aluno 1 "A", Aluno 2 "B", Aluno 3 "C"]
+            alunoBuscado = Aluno 2 "Nome qualquer"
+        in
+            pertence alunoBuscado listaAlunos ~?= True,
+
+    "teste 4: aluno nao presente na lista" ~:
+        let
+            listaAlunos = [Aluno 1 "A", Aluno 2 "B", Aluno 3 "C"]
+            alunoBuscado = Aluno 4 "Outro Nome"
+        in
+            pertence alunoBuscado listaAlunos ~?= False
     ]
 
 main :: IO ()
-main = runTestTT testPositivos >>= print
+main = runTestTT testImplementacaoAluno >>= print
