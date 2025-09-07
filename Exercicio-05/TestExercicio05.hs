@@ -1,7 +1,7 @@
 module Main where
 
 import Test.HUnit
-import Exercicio16 (maiorElemento)
+import Exercicio05 (maiorElemento)
 
 testMaiorElemento :: Test
 testMaiorElemento = TestList [
