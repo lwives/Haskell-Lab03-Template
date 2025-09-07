@@ -1,4 +1,4 @@
-module Exercicio16 (maiorElemento) where
+module Exercicio05 (maiorElemento) where
 
 -- Elabore a função 'maiorElemento', que recebe uma lista e retorna o maior
 -- elemento dela. A função deve ser genérica para qualquer tipo que possa ser
