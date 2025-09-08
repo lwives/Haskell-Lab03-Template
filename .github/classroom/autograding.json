@@ -1,67 +1,43 @@
 {
   "tests": [
     {
-      "name": "Exercicio 01: pertenceLst",
+      "name": "Exercicio 01: potenciasDe2",
       "setup": "cabal build Exercicio-01-Test",
       "run": "cabal run Exercicio-01-Test",
       "input": "",
-      "output": "Test Cases: 7  Calls: 7  Failures: 0  Errors: 0",
+      "output": "Test Cases: 4  Calls: 4  Failures: 0  Errors: 0",
       "points": 10
     },
     {
-      "name": "Exercicio 02: ocorrencias",
+      "name": "Exercicio 02: sequenciaCubos",
       "setup": "cabal build Exercicio-02-Test",
       "run": "cabal run Exercicio-02-Test",
       "input": "",
-      "output": "Test Cases: 6  Calls: 6  Failures: 0  Errors: 0",
+      "output": "Test Cases: 4  Calls: 4  Failures: 0  Errors: 0",
       "points": 10
     },
     {
-      "name": "Exercicio 03: replica",
+      "name": "Exercicio 03: fibonacci",
       "setup": "cabal build Exercicio-03-Test",
       "run": "cabal run Exercicio-03-Test",
       "input": "",
-      "output": "Test Cases: 6  Calls: 6  Failures: 0  Errors: 0",
+      "output": "Test Cases: 4  Calls: 4  Failures: 0  Errors: 0",
       "points": 10
     },
     {
-      "name": "Exercicio 04: positivos",
+      "name": "Exercicio 04: pertence",
       "setup": "cabal build Exercicio-04-Test",
       "run": "cabal run Exercicio-04-Test",
       "input": "",
-      "output": "Test Cases: 6  Calls: 6  Failures: 0  Errors: 0",
+      "output": "Test Cases: 4  Calls: 4  Failures: 0  Errors: 0",
       "points": 10
     },
     {
-      "name": "Exercicio 05: norma",
+      "name": "Exercicio 05: maiorElemento",
       "setup": "cabal build Exercicio-05-Test",
       "run": "cabal run Exercicio-05-Test",
       "input": "",
-      "output": "Test Cases: 5  Calls: 5  Failures: 0  Errors: 0",
-      "points": 10
-    },
-    {
-      "name": "Exercicio 06: produtoInterno",
-      "setup": "cabal build Exercicio-06-Test",
-      "run": "cabal run Exercicio-06-Test",
-      "input": "",
-      "output": "Test Cases: 5  Calls: 5  Failures: 0  Errors: 0",
-      "points": 10
-    },
-    {
-      "name": "Exercicio 07: similaridade",
-      "setup": "cabal build Exercicio-07-Test",
-      "run": "cabal run Exercicio-07-Test",
-      "input": "",
-      "output": "Test Cases: 5  Calls: 5  Failures: 0  Errors: 0",
-      "points": 10
-    },
-    {
-      "name": "Exercicio 08: distanciaManhattan",
-      "setup": "cabal build Exercicio-08-Test",
-      "run": "cabal run Exercicio-08-Test",
-      "input": "",
-      "output": "Test Cases: 5  Calls: 5  Failures: 0  Errors: 0",
+      "output": "Test Cases: 4  Calls: 4  Failures: 0  Errors: 0",
       "points": 10
     }
   ]
