@@ -1,7 +1,7 @@
 module Main where
 
 import Test.HUnit
-import Exercicio02 (potenciasDe2)
+import Exercicio01 (potenciasDe2)
 
 testPotenciasDe2 :: Test
 testPotenciasDe2 = TestList [
